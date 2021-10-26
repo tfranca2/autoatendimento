@@ -7,6 +7,6 @@
         <a href="{{url('/alteracao')}}" class="btn btn-lg btn-success btn-menu-revert-colors">Alteração Vencimento - Boletos</a>
         <a href="{{url('/pagamento')}}" class="btn btn-lg btn-success btn-menu-revert-colors">Pagamento - Boletos</a>
     </div>
-    <a href="{{url('/')}}" class="btn btn-lg btn-success" style="position: absolute; right: 20px; bottom: 20px;"><i class="fa fa-arrow-left"></i></a>
+    <a href="{{url('/servicos')}}" class="btn btn-lg btn-success" style="position: absolute; right: 20px; bottom: 20px;"><i class="fa fa-arrow-left"></i></a>
 </div>
 @endsection
