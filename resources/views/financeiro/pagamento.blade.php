@@ -34,10 +34,7 @@ FINANCEIRO
     </tbody>
     <tfoot>
         <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th style="color: #49bf9c;">Valor Total - Boletos</th>
+            <th colspan="4" style="color: #49bf9c; text-align: right;">Valor Total - Boletos</th>
             <th>R$ {{ formatDecimalToView(6120.00) }}</th>
         </tr>
     </tfoot>

@@ -39,7 +39,8 @@
                 height: 100%;
 
                 background: url('{{ url('/images/logo-bw.png') }}') no-repeat;
-                background-position: bottom 50px center;
+                background-size: 50% auto;
+                background-position: center bottom;
             }
             .side-bar, .row, .container-fluid{
                 height: 100%;
@@ -74,15 +75,15 @@
     <body>
         <div class="container-fluid" style="padding: 0;">
             <div class="row">
-                <div class="col-sm-12 text-center d-inline-block d-sm-none h-25"><img src="{{url('/images/logo.gif')}}"></div>
+                <div class="col-sm-12 text-center d-inline-block d-sm-none" style="height: 13%; background: #49bf9c; margin-bottom: -20%;"><img src="{{url('/images/logo.png')}}" style="max-width: 200px; margin-top: 20px;"></div>
                 <div class="col-sm-4 side-bar d-none d-md-block">
                     <div class="nav-side-menu">
                         <br><br>
-                        <h1 class="text-center" style="border-bottom: 3px solid #fff; padding: 20px;">
+                        <h2 class="text-center" style="border-bottom: 3px solid #fff; padding: 20px;">
                             @hasSection('highlight')<span class="" style="padding: .5rem 1rem; border-radius: .3rem; background: #cff6ec; color: #49bf9c;">@endif
-                                SERVIÇOS
+                                AUTOATENDIMENTO
                             @hasSection('highlight')</span>@endif
-                        </h1>
+                        </h2>
                         <p class="text-center" style="font-weight: bold; font-size: 16pt;">@yield('highlight')</p>
                     </div>
                 </div>

@@ -25,3 +25,7 @@ Route::get('/prorrogacao', function () {
 Route::get('/pagamento', function () {
     return view('financeiro.pagamento');
 });
+
+Route::get('/alteracao', function () {
+    return view('financeiro.alteracao');
+});

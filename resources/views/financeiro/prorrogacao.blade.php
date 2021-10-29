@@ -41,7 +41,7 @@ FINANCEIRO
     </tbody>
 </table>
 <div style="position: absolute; bottom: 20px; left: 20px;">
-    <a href="{{url('/')}}" class="btn btn-lg btn-success">PAGAR</a>
+    <a href="{{url('/pagamento')}}" class="btn btn-lg btn-success">PAGAR</a>
     <a href="{{url('/')}}" class="btn btn-lg btn-success">SALVAR</a>
 </div>
 <div style="position: absolute; bottom: 20px; right: 30px;">
