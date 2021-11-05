@@ -3,19 +3,19 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('login');
-});
-
-Route::post('/login', function () {
-    return view('menu');
+    // return view('login');
+    // return view('menu');
+    return view('menu-icons');
 });
 
 Route::get('/servicos', function () {
-    return view('menu');
+    // return view('menu');
+    return view('menu-icons');
 });
 
 Route::get('/financeiro', function () {
-    return view('financeiro.menu');
+    // return view('financeiro.menu');
+    return view('financeiro.menu-colors');
 });
 
 Route::get('/prorrogacao', function () {

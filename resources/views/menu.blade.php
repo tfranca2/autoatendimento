@@ -1,9 +1,15 @@
 @extends('layout')
 @section('content')
 <div class="col-md-8 h-75" style="display: flex; justify-content: center; align-items: center; text-align: center;">
-    <div class="d-grid gap-4 col-md-8">
-        <a href="{{url('/financeiro')}}" class="btn btn-lg btn-success">FINANCEIRO</a>
-        <a href="{{url('/academico')}}" class="btn btn-lg btn-success">ACADÊMICO</a>
+    <div class="gap-4 col-md-8">
+        <a href="{{url('/financeiro')}}" class="btn btn-success btn-square-md">
+            <br><br><i class="fa fa-university" aria-hidden="true" style="font-size: 75px;"></i><br>
+            FINANCEIRO
+        </a>
+        <a href="{{url('/academico')}}" class="btn btn-success btn-square-md disabled offset-md-1">
+            <br><br><i class="fa fa-graduation-cap" aria-hidden="true" style="font-size: 75px;"></i><br>
+            ACADÊMICO
+        </a>
     </div>
 </div>
 @endsection
