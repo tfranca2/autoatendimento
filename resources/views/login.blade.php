@@ -2,7 +2,7 @@
 @section('content')
 <div class="col-md-8" style="display: flex; justify-content: center; align-items: center; text-align: center;">
     <div class="d-grid gap-4 col-md-6">
-        <form action="{{ url('/login') }}" method="POST" style="font-weight: bold; color: #47be9a;">
+        <form action="{{ url('/'.$redirect) }}" method="GET" style="font-weight: bold; color: #47be9a;">
             @csrf
             <img src="{{ url('images/avatar.png') }}" style="max-width: 90px;"><br>
             <label class="pull-left">CPF</label>

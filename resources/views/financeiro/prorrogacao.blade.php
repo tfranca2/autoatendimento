@@ -44,4 +44,29 @@ FINANCEIRO
     <a href="{{url('/financeiro')}}" class="btn btn-lg btn-success"><i class="fa fa-arrow-left"></i></a>
 </div>
 </div>
+<script type="text/javascript">
+    var idleTime = 0;
+    $(document).ready(function () {
+        //Increment the idle time counter every minute.
+        var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
+
+        $('html').mousemove(function (e) {
+            idleTime = 0;
+            clearInterval(idleInterval);
+            idleInterval = setInterval(timerIncrement, 60000);
+        });
+        $('html').keypress(function (e) {
+            idleTime = 0;
+            clearInterval(idleInterval);
+            idleInterval = setInterval(timerIncrement, 60000);
+        });
+    });
+
+    function timerIncrement() {
+        idleTime = idleTime + 1;
+        if (idleTime > 0) { // minute
+            window.location.href = 'financeiro';
+        }
+    }
+</script>
 @endsection

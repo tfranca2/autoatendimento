@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FinanceiroController;
 
 Route::get('/', function () {
     // return view('login');
@@ -18,14 +19,6 @@ Route::get('/financeiro', function () {
     return view('financeiro.menu-colors');
 });
 
-Route::get('/prorrogacao', function () {
-    return view('financeiro.prorrogacao');
-});
-
-Route::get('/pagamento', function () {
-    return view('financeiro.pagamento');
-});
-
-Route::get('/alteracao', function () {
-    return view('financeiro.alteracao');
-});
+Route::get('/prorrogacao', [FinanceiroController::class, 'prorrogacao']);
+Route::get('/pagamento', [FinanceiroController::class, 'pagamento']);
+Route::get('/alteracao', [FinanceiroController::class, 'alteracao']);

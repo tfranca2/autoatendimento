@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Validator;
+
 if (!function_exists('onlyNumbers')) {
     function onlyNumbers($str)
     {
@@ -46,5 +48,18 @@ if (!function_exists('formatDecimalToView')) {
             }
         }
         return '0,00';
+    }
+}
+
+if (!function_exists('isCpf')) {
+    function isCpf($document)
+    {
+        $document = onlyNumbers($document);
+        $validator = Validator::make(['document' => $document], [
+            'document' => 'required|cpf',
+        ]);
+        if ($validator->fails())
+            return false;
+        return true;
     }
 }
