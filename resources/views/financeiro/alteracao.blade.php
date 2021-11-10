@@ -13,7 +13,7 @@
             <a href="#" class="btn btn-lg btn-success btn-square-sm opt" style="font-size: 75px; padding-top: 20px;">15</a>
             <a href="#" class="btn btn-lg btn-success btn-square-sm offset-md-1 disabled opt" disabled style="font-size: 75px; padding-top: 20px;">20</a>
         </div>
-        <div class="col-md-8 offset-md-2 mt-md-4 mt-2">
+        <div class="col-md-8 offset-md-2 mt-md-4 mt-2 mb-4">
             <a href="#" class="btn btn-lg btn-success btn-square-sm opt" style="font-size: 75px; padding-top: 20px;">25</a>
             <!-- <a href="#" class="btn btn-lg btn-success btn-square-sm offset-md-1" style="font-size: 75px; padding-top: 20px;">30</a> -->
         </div>

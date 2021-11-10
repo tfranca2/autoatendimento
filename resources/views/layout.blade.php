@@ -76,7 +76,7 @@
     <body>
         <div class="container-fluid" style="padding: 0;">
             <div class="row">
-                <div class="col-sm-12 text-center d-inline-block d-sm-none" style="height: 13%; background: #49bf9c; margin-bottom: -20%;"><img src="{{url('/images/logo.png')}}" style="max-width: 200px; margin-top: 20px;"></div>
+                <div class="col-sm-12 text-center d-inline-block d-sm-none" style="height: 13%; background: #49bf9c;"><img src="{{url('/images/logo.png')}}" style="max-width: 200px; margin-top: 20px;"></div>
                 <div class="col-sm-4 side-bar d-none d-md-block">
                     <div class="nav-side-menu">
                         <br><br>
