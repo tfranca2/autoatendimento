@@ -11,3 +11,12 @@
 .btn.disabled {
 	opacity: 0.2;
 }
+
+table {
+	color: #000;
+}
+
+.selected {
+	color:  gold !important;
+	border-color:  gold !important;
+}

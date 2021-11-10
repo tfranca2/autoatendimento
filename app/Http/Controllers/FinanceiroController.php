@@ -30,4 +30,12 @@ class FinanceiroController extends Controller
 
         return view('financeiro.alteracao',[ 'cpf' => $request->cpf, ]);
     }
+
+    public function emissao( Request $request )
+    {
+        if( ! $request->has('cpf') || ! isCpf($request->cpf) )
+            return view('login',[ 'redirect' => 'emissao' ]);
+
+        return view('financeiro.emissao',[ 'cpf' => $request->cpf, ]);
+    }
 }
