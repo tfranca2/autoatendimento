@@ -5,21 +5,21 @@ FINANCEIRO
 @section('content')
 <div class="col-md-8 gap-2 text-center" style="position: relative;">
     <div class="col-md-10 offset-md-1">
-        <br> <br> <h3 style="color: #49bf9c;">Qual o primeiro nome da sua mãe?</h3> <br>
-        <div class="col-md-8 offset-md-2 mt-md-4 mt-2">
-            <a href="#" class="btn btn-lg btn-success btn-square-sm true" style="font-size: 35px; padding-top: 45px;">
-            	{{ mb_strimwidth("Aparecida", 0, 8, "...") }}
+        <br> <h3 style="color: #49bf9c;">Qual o primeiro nome da sua mãe?</h3> <br>
+        <div class="col-xs-8 mt-md-4 mt-2">
+            <a href="#" class="btn btn-lg btn-success btn-square-sm text-center true" style="padding-top: 40px;">
+            	{{ 'Aparecida' }}
         	</a>
-            <a href="#" class="btn btn-lg btn-success btn-square-sm offset-md-1 false" style="font-size: 35px; padding-top: 45px;">
-            	{{ mb_strimwidth("Francisca", 0, 8, "...") }}
+            <a href="#" class="btn btn-lg btn-success btn-square-sm text-center offset-md-1 false" style="padding-top: 40px;">
+            	{{ 'Francisca' }}
         	</a>
         </div>
-        <div class="col-md-8 offset-md-2 mt-md-4 mt-2">
-            <a href="#" class="btn btn-lg btn-success btn-square-sm false" style="font-size: 35px; padding-top: 45px;">
-            	{{ mb_strimwidth("Lourdes", 0, 8, "...") }}
+        <div class="col-xs-8 mt-md-4 mt-2">
+            <a href="#" class="btn btn-lg btn-success btn-square-sm text-center false" style="padding-top: 40px;">
+            	{{ 'Lourdes' }}
         	</a>
-            <a href="#" class="btn btn-lg btn-success btn-square-sm offset-md-1 false" style="font-size: 35px; padding-top: 45px;">
-            	{{ mb_strimwidth("Glória", 0, 8, "...") }}
+            <a href="#" class="btn btn-lg btn-success btn-square-sm text-center offset-md-1 false" style="padding-top: 40px;">
+            	{{ 'Glória' }}
         	</a>
         </div>
     </div>

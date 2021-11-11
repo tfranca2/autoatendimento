@@ -42,7 +42,7 @@ FINANCEIRO
 
 <!-- Modal -->
 <div class="modal fade" id="dateModal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title">Selecione a nova data</h5>
@@ -52,7 +52,7 @@ FINANCEIRO
       </div>
       <div class="modal-body">
         <a href="#" id="plus" class="btn btn-primary btn-block btn-lg"><i class="fa fa-plus"></i></a>
-        <div id="data" class="text-center" style="font-size: 45pt;"><span id="dia"></span> / <span id="mes"></span> / <span id="ano"></span></div>
+        <div id="data" class="text-center" style="font-size: 42pt;"><span id="dia"></span> / <span id="mes"></span> / <span id="ano"></span></div>
         <a href="#" id="minus" class="btn btn-primary btn-block btn-lg"><i class="fa fa-minus"></i></a>
       </div>
       <div class="modal-footer">

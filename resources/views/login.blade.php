@@ -1,7 +1,8 @@
 @extends('layout')
 @section('content')
-<div class="col-md-8" style="display: flex; justify-content: center; align-items: center; text-align: center;">
-    <div class="d-grid gap-4 col-md-6">
+<div class="col-md-8 text-center">
+    <div class="col-md-6 offset-md-3">
+        <br><br>
         <form action="{{ url('/'.$redirect) }}" method="GET" style="font-weight: bold; color: #47be9a;">
             @csrf
             <img src="{{ url('images/avatar.png') }}" style="max-width: 90px;"><br>

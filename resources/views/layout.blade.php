@@ -18,8 +18,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" integrity="sha512-nMNlpuaDPrqlEls3IX/Q56H36qvBASwb3ipuo3MxeWbsQB1881ox0cRv7UPTgBlriqoynt35KjEwgGUeUXIPnw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" integrity="sha512-eyHL1atYNycXNXZMDndxrDhNAegH2BDWt1TmkXJPoGf1WLlNYt08CSjkqF5lnCRmdm3IrkHid8s2jOUY4NIZVQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="{{ url('/js/custom.js') }}"></script>
-        <link rel="stylesheet" href="{{ url('/css/custom.css') }}" />
+        <script src="{{ url('/js/custom.js') }}?{{ time() }}"></script>
+        <link rel="stylesheet" href="{{ url('/css/custom.css') }}?{{ time() }}" />
         <style>
             body {
                 font-family: 'Nunito', sans-serif;
@@ -80,7 +80,7 @@
                 <div class="col-sm-4 side-bar d-none d-md-block">
                     <div class="nav-side-menu">
                         <br><br>
-                        <h2 class="text-center" style="border-bottom: 3px solid #fff; padding: 20px;">
+                        <h2 class="text-center" style="border-bottom: 3px solid #fff; padding: 20px; font-size: 1.5em;">
                             @hasSection('highlight')<span class="" style="padding: .5rem 1rem; border-radius: .3rem; background: #cff6ec; color: #49bf9c;">@endif
                                 AUTOATENDIMENTO
                             @hasSection('highlight')</span>@endif

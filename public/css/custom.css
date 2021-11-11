@@ -1,11 +1,11 @@
 .btn-square-md {
-	width: 200px !important;
-	height: 200px !important;
+	width: 150px !important;
+	height: 150px !important;
 }
 
 .btn-square-sm {
-	width: 150px !important;
-	height: 150px !important;
+	width: 120px !important;
+	height: 120px !important;
 }
 
 .btn.disabled {
@@ -19,4 +19,10 @@ table {
 .selected {
 	color:  gold !important;
 	border-color:  gold !important;
+}
+
+@media (orientation: portrait) {
+	#toast-container {
+		margin-top: 125px;
+	}
 }
