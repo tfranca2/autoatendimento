@@ -23,9 +23,16 @@ FINANCEIRO
         	</a>
         </div>
     </div>
+
+    <div style="position: absolute; bottom: 20px; right: 30px;">
+        <a href="{{url('/financeiro')}}" class="btn btn-lg btn-success"><i class="fa fa-arrow-left"></i></a>
+    </div>
 </div>
 <script type="text/javascript">
     $(document).ready(function () {
+
+        oneMinuteToReturnFor('financeiro');
+
 		$('.true').click(function(e){
 			toastr.success('Alterado com sucesso!');
 			window.location.href = 'financeiro';

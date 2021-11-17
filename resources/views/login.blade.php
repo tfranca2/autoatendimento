@@ -11,10 +11,18 @@
             <button type="submit" class="btn btn-lg btn-success pull-right">ENVIAR</button>
         </form>
     </div>
+    <div style="position: absolute; bottom: 20px; right: 30px;">
+        <a href="#" onclick="window.history.back();" class="btn btn-lg btn-success"><i class="fa fa-arrow-left"></i></a>
+    </div>
 </div>
 <style>
     body{
         background: #cff6ec;
     }
 </style>
+<script type="text/javascript">
+    $(document).ready(function () {
+        oneMinuteToReturnFor('');
+    });
+</script>
 @endsection

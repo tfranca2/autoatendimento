@@ -76,14 +76,14 @@
     <body>
         <div class="container-fluid" style="padding: 0;">
             <div class="row">
-                <div class="col-sm-12 text-center d-inline-block d-sm-none" style="height: 13%; background: #49bf9c;"><img src="{{url('/images/logo.png')}}" style="max-width: 200px; margin-top: 20px;"></div>
+                <div class="col-sm-12 text-center d-inline-block d-sm-none" style="height: 13%; background: #49bf9c;"><a href="{{ url('/') }}"><img src="{{url('/images/logo.png')}}" style="max-width: 200px; margin-top: 20px;"></a></div>
                 <div class="col-sm-4 side-bar d-none d-md-block">
                     <div class="nav-side-menu">
                         <br><br>
                         <h2 class="text-center" style="border-bottom: 3px solid #fff; padding: 20px; font-size: 1.5em;">
-                            @hasSection('highlight')<span class="" style="padding: .5rem 1rem; border-radius: .3rem; background: #cff6ec; color: #49bf9c;">@endif
+                            @hasSection('highlight')<a href="{{ url('/') }}" class="" style="padding: .5rem 1rem; border-radius: .3rem; background: #cff6ec; color: #49bf9c;">@endif
                                 AUTOATENDIMENTO
-                            @hasSection('highlight')</span>@endif
+                            @hasSection('highlight')</a>@endif
                         </h2>
                         <p class="text-center" style="font-weight: bold; font-size: 16pt;">@yield('highlight')</p>
                     </div>

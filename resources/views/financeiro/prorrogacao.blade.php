@@ -63,21 +63,9 @@ FINANCEIRO
 </div>
 
 <script type="text/javascript">
-    var idleTime = 0;
     $(document).ready(function () {
-        //Increment the idle time counter every minute.
-        var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
 
-        $('html').mousemove(function (e) {
-            idleTime = 0;
-            clearInterval(idleInterval);
-            idleInterval = setInterval(timerIncrement, 60000);
-        });
-        $('html').keypress(function (e) {
-            idleTime = 0;
-            clearInterval(idleInterval);
-            idleInterval = setInterval(timerIncrement, 60000);
-        });
+        oneMinuteToReturnFor('financeiro');
 
         var mesesde31 = [ 1, 3, 5, 7, 8, 10, 12 ];
         var mesesde30 = [ 4, 6, 9, 11 ];
@@ -210,12 +198,5 @@ FINANCEIRO
         }
 
     });
-
-    function timerIncrement() {
-        idleTime = idleTime + 1;
-        if (idleTime > 0) { // minute
-            window.location.href = 'financeiro';
-        }
-    }
 </script>
 @endsection

@@ -24,21 +24,9 @@
     </div>
 </div>
 <script type="text/javascript">
-    var idleTime = 0;
     $(document).ready(function () {
-        //Increment the idle time counter every minute.
-        var idleInterval = setInterval(timerIncrement, 60000); // 1 minute
 
-        $('html').mousemove(function (e) {
-            idleTime = 0;
-            clearInterval(idleInterval);
-            idleInterval = setInterval(timerIncrement, 60000);
-        });
-        $('html').keypress(function (e) {
-            idleTime = 0;
-            clearInterval(idleInterval);
-            idleInterval = setInterval(timerIncrement, 60000);
-        });
+        oneMinuteToReturnFor('financeiro');
 
         $('.opt').click(function(){
             $('.selected').removeClass('selected');
@@ -55,12 +43,5 @@
         });
 
     });
-
-    function timerIncrement() {
-        idleTime = idleTime + 1;
-        if (idleTime > 0) { // minute
-            window.location.href = 'financeiro';
-        }
-    }
 </script>
 @endsection

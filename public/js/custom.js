@@ -158,3 +158,30 @@ window.ParsleyValidator.addValidator('cpf_cnpj', function (value, requirement) {
     else
         return validarCNPJ(value);
 }, 32).addMessage('pt-br', 'cnpj', 'CNPJ inválido.');
+
+
+function oneMinuteToReturnFor( return_to ){
+    var idleTime = 0;
+
+    var idleInterval = setInterval(timerIncrement, 60000);
+    $('html').mousemove(function (e) {
+        idleTime = 0;
+        clearInterval(idleInterval);
+        idleInterval = setInterval(timerIncrement, 60000);
+    });
+    $('html').keypress(function (e) {
+        idleTime = 0;
+        clearInterval(idleInterval);
+        idleInterval = setInterval(timerIncrement, 60000);
+    });
+
+    function timerIncrement(){
+        idleTime = idleTime + 1;
+        if (idleTime > 0) { // minute
+            if( return_to )
+                window.location.href = return_to;
+            else
+                window.history.back();
+        }
+    }
+}
