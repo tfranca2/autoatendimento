@@ -30,7 +30,8 @@ $(document).ready(function(){
 
 	$('.select2').select2({language: "pt-BR"});
 
-	$('body').on('focus', 'input[name=cpf]', function(){ $(this).mask('999.999.999-99') });
+	$('body').on('focus', '.cpf', function(){ $(this).mask('999.999.999-99') });
+    $('body').on('focus', 'input[name=cpf]', function(){ $(this).mask('999.999.999-99') });
 	$('body').on('focus', 'input[name=cnpj]', function(){ $(this).mask('99.999.999/9999-99') });
 	$('body').on('keydown', 'input[name=cpf_cnpj]', function(){ 
 	    try {
